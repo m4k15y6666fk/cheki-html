@@ -7,7 +7,7 @@
 
 "cheki-html" and your [nunjucks + scss documents](https://github.com/m4k15y6666fk/cheki-html/blob/master/input/example.njk) can generate the images like:
 
-<img width="33.3%" src="example.png" alt="Example">
+<img width="33.3%" src="https://github.com/m4k15y6666fk/cheki-html/blob/master/example.png" alt="Example">
 
 ## Features
 
@@ -69,7 +69,7 @@ cheki-html init
 nano example.njk
 # or add some html/nunjucks files (.html/.njk)
 
-nano assets/css/line.scss
+nano assets/css/chat.scss
 # or add some css/scss/sass files (.css/.scss/.sass)
 ```
 
@@ -97,6 +97,9 @@ I don't test under Linux and Windows.
 
 * M4K-15Y-6666-FK
 
+* [GitHub](https://github.com/m4k15y6666fk)
+* [OFUSE](https://ofuse.me/m4k15y6666fk)
+
 * [Email](mailto:m4k15y6666fk@outlook.com)
 
 <!--
@@ -107,15 +110,13 @@ I don't test under Linux and Windows.
 [Twitter](https://twitter.com)
 -->
 
-<!--
 ## Donate
 
-[OFUSE](https://ofuse.me/)
+<a data-ofuse-widget-button href="https://ofuse.me/o?uid=54410" data-ofuse-id="54410" data-ofuse-size="small" data-ofuse-color="blue-green" data-ofuse-style="rectangle">OFUSEで応援を送る</a><script async src="https://ofuse.me/assets/platform/widget.js" charset="utf-8"></script>
 
 Here, you can send messages and view the progress of my works (not only programs; novel, music, or etc.)
 
 Of course, you can just donate to me.
--->
 
 ## License
 
