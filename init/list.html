@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Files</title>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', async _ => {
+            const __dirname = await fetch('/dir').then(response => response.text());
+            document.querySelector('.dirname').textContent = __dirname;
+
+            let files;
+            const dest = new WritableStream({
+                start(controller) {
+                    document.body.insertAdjacentHTML(
+                        'beforeend',
+                        '<ul class="files"></ul>'
+                    );
+                    files = document.querySelector('.files');
+                },
+
+                write(chunk, controller) {
+                    const csv = new TextDecoder('utf8').decode(chunk);
+                    csv.split('\n').map(line => {
+                        if (line.length > 0) {
+                            const [ __filename, href ] = line.split(',');
+                            files.insertAdjacentHTML(
+                                'beforeend',
+                                `<li><a href="${href}">${__filename}</a></li>`
+                            );
+                        }
+                    });
+                }
+            });
+
+            const src = await fetch('/ls').then(response => response.body);
+
+            src.pipeTo(dest);
+        });
+    </script>
+</head>
+<body>
+    <span class="dirname"></span>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+{% extends "./templates/chat.njk" %}
+
+{% block title %}
+ぐるーぷ ちゃっと
+{% endblock %}
+
+{% import "./templates/chat-components.njk" as components %}
+
+{% block body %}
+
+{{ components.message_from(
+    message='今日のご飯はイカリングだよ〜') }}
+
+{{ components.stamp_from(
+    icon='',
+    name='') }}
+
+{{ components.photo_from(
+    icon='',
+    name='') }}
+
+{{ components.message_to(
+    message='りょーかい') }}
+
+{{ components.message_to(
+    message='楽しみにしてるね',
+    read=false) }}
+
+{{ components.stamp_to(
+    read=false) }}
+
+{{ components.photo_to(
+    read=false) }}
+
+{% endblock %}

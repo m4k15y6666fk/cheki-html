@@ -1,0 +1,115 @@
+
+{% macro message_from(icon="/assets/img/icon/1.png", name="Alice", message='message', time='0:00') %}
+<!-- 相手のメッセージ -->
+<div class="line__left">
+    {% if icon.length > 0 %}
+    <figure>
+        <img src="{{ icon }}">
+    </figure>
+    {% endif %}
+
+    <div class="line__left-text">
+        {% if name.length > 0 %}
+        <div class="name">{{ name }}</div>
+        {% endif %}
+
+        <div class="text">{{ message }}</div>
+
+        {% if time.length > 0 %}
+        <span class="date">{{ time }}</span>
+        {% endif %}
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro stamp_from(icon="/assets/img/icon/1.png", name="Alice", image='/assets/img/stamp/eat.png', time='0:00') %}
+<!-- 相手のスタンプ -->
+<div class="line__left">
+    {% if icon.length > 0 %}
+    <figure>
+        <img src="{{ icon }}">
+    </figure>
+    {% endif %}
+
+    <div class="line__left-text">
+        {% if name.length > 0 %}
+        <div class="name">{{ name }}</div>
+        {% endif %}
+
+        <div class="stamp">
+            <img src="{{ image }}">
+        </div>
+
+        {% if time.length > 0 %}
+        <span class="date">{{ time }}</span>
+        {% endif %}
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro photo_from(icon="/assets/img/icon/1.png", name="Alice", image='/assets/img/beach.png', time='0:00') %}
+<!-- 相手の画像-->
+<div class="line__left">
+    {% if icon.length > 0 %}
+    <figure>
+        <img src="{{ icon }}">
+    </figure>
+    {% endif %}
+
+    <div class="line__left-text">
+        {% if name.length > 0 %}
+        <div class="name">{{ name }}</div>
+        {% endif %}
+
+        <div class="photo">
+            <img src="{{ image }}">
+        </div>
+
+        {% if time.length > 0 %}
+        <span class="date">{{ time }}</span>
+        {% endif %}
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro message_to(message='message', read=true, time='0:00') %}
+<!-- 自分のメッセージ -->
+<div class="line__right">
+    <div class="text">{{ message }}</div>
+
+    {% if time.length > 0 %}
+    <span class="date">{{ "既読" if read else "" }}<br>{{ time }}</span>
+    {% endif %}
+</div>
+{% endmacro %}
+
+
+{% macro stamp_to(image='/assets/img/stamp/silent.png', read=true, time='0:00') %}
+<!-- 自分のスタンプ -->
+<div class="line__right">
+    <div class="stamp">
+        <img src="{{ image }}">
+    </div>
+
+    {% if time.length > 0 %}
+    <span class="date">{{ "既読" if read else "" }}<br>{{ time }}</span>
+    {% endif %}
+</div>
+{% endmacro %}
+
+
+{% macro photo_to(image='/assets/img/town.png', read=true, time='0:00') %}
+<!-- 自分の画像-->
+<div class="line__right">
+    <div class="photo">
+        <img src="{{ image }}">
+    </div>
+
+    {% if time.length > 0 %}
+    <span class="date">{{ "既読" if read else "" }}<br>{{ time }}</span>
+    {% endif %}
+</div>
+{% endmacro %}
