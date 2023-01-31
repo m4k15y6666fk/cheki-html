@@ -30,8 +30,6 @@
     "vinyl": "^3.0.0"
   },
   "overrides": {
-    "browser-sync": {
-      "ua-parser-js": "^1.0.33"
-    }
+    "ua-parser-js": "^1.0.33"
   }
 }
