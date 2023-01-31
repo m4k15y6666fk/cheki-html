@@ -112,7 +112,7 @@ I don't test under Linux and Windows.
 
 ## Donate
 
-<a data-ofuse-widget-button href="https://ofuse.me/o?uid=54410" data-ofuse-id="54410" data-ofuse-size="small" data-ofuse-color="blue-green" data-ofuse-style="rectangle">OFUSEで応援を送る</a><script async src="https://ofuse.me/assets/platform/widget.js" charset="utf-8"></script>
+[OFUSE](https://ofuse.me/m4k15y6666fk)
 
 Here, you can send messages and view the progress of my works (not only programs; novel, music, or etc.)
 
