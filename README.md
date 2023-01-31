@@ -97,7 +97,7 @@ I don't test under Linux and Windows.
 
 * M4K-15Y-6666-FK
 
-[Email](mailto:m4k15y6666fk@outlook.com)
+* [Email](mailto:m4k15y6666fk@outlook.com)
 
 <!--
 [Web](https://render.com)
@@ -117,7 +117,7 @@ Here, you can send messages and view the progress of my works (not only programs
 Of course, you can just donate to me.
 -->
 
-# License
+## License
 
 "cheki-html" is under [MIT license](https://opensource.org/licenses/MIT).
 

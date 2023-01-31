@@ -1,7 +1,7 @@
 {
   "name": "cheki-html",
   "version": "1.0.0",
-  "description": "Nunjucks と SCSS から チャット画面のスクリーンショットを生成する CLI ツール",
+  "description": "CLI tool for converting Nunjucks + SCSS documents to PNG Images",
   "engines": {
     "node": ">=18.12.1"
   },
