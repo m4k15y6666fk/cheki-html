@@ -1,16 +1,24 @@
 {
   "name": "cheki-html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool for converting Nunjucks + SCSS documents to PNG Images",
   "engines": {
     "node": ">=18.12.1"
   },
   "main": "index.mjs",
   "scripts": {
-    "build:ignore" : "cat ./.gitignore >> ./.npmignore && uniq ./.npmignore >> ./.npmignore",
+    "build:ignore": "cat ./.gitignore >> ./.npmignore && uniq ./.npmignore >> ./.npmignore",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [ "html", "nunjucks", "css", "scss", "screenshot", "cli", "convert" ],
+  "keywords": [
+    "html",
+    "nunjucks",
+    "css",
+    "scss",
+    "screenshot",
+    "cli",
+    "convert"
+  ],
   "author": "M4K-15Y-6666-FK",
   "license": "MIT",
   "bin": {
