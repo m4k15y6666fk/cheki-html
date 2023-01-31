@@ -7,11 +7,7 @@
 
 "cheki-html" and your [nunjucks + scss documents](https://github.com/m4k15y6666fk/cheki-html/blob/master/input/example.njk) can generate the images like:
 
-![Example](example.png 'Example')
-
-<!--
-<img width="50" src="demo.png">
--->
+<img width="33.3%" src="example.png" alt="Example">
 
 ## Features
 
