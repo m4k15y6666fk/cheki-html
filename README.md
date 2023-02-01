@@ -3,6 +3,11 @@
 
 "cheki-html" is a CLI tool for converting Nunjucks + SCSS documents to PNG Images.
 
+## Languages
+
+* [日本語](https://github.com/m4k15y6666fk/cheki-html/blob/master/README-ja.md)
+* [English](https://github.com/m4k15y6666fk/cheki-html#readme)
+
 ## DEMO
 
 "cheki-html" and your [nunjucks + scss documents](https://github.com/m4k15y6666fk/cheki-html/blob/master/input/example.njk) can generate the images like:

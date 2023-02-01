@@ -4,6 +4,7 @@
   "description": "CLI tool for converting Nunjucks + SCSS documents to PNG Images",
   "homepage": "https://github.com/m4k15y6666fk/cheki-html#readme",
   "repository": "https://github.com/m4k15y6666fk/cheki-html.git",
+  "funding": "https://ofuse.me/m4k15y6666fk",
   "engines": {
     "node": ">=18.12.1"
   },
