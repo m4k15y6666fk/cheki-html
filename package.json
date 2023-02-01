@@ -9,21 +9,10 @@
   },
   "main": "index.mjs",
   "scripts": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "build:ignore": "cat ./.gitignore >> ./.npmignore",
-<<<<<<< HEAD
-=======
-    "build:ignore": "cat ./.gitignore >> ./.npmignore && uniq ./.npmignore >> ./.npmignore",
->>>>>>> 54fd02a (release v1.0.1)
-=======
-    "build:ignore": "cat ./.gitignore >> ./.npmignore",
->>>>>>> 456a06e (modified:   README.md)
-=======
     "preversion": "echo \"preversion-hook\"",
     "version": "echo \"version-hook\"",
     "postversion": "echo \"execute: git tag -a [version] -m [comment]\"",
->>>>>>> c9a25c0 (added hooks: postversion)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -35,20 +24,10 @@
     "cli",
     "convert"
   ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 456a06e (modified:   README.md)
   "author": {
     "name": "M4K-15Y-6666-FK",
     "email": "m4k15y6666fk@outlook.com"
   },
-<<<<<<< HEAD
-=======
-  "author": "M4K-15Y-6666-FK",
->>>>>>> 54fd02a (release v1.0.1)
-=======
->>>>>>> 456a06e (modified:   README.md)
   "license": "MIT",
   "bin": {
     "cheki-html": "./index.mjs"
