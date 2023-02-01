@@ -12,12 +12,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
     "build:ignore": "cat ./.gitignore >> ./.npmignore",
+<<<<<<< HEAD
 =======
     "build:ignore": "cat ./.gitignore >> ./.npmignore && uniq ./.npmignore >> ./.npmignore",
 >>>>>>> 54fd02a (release v1.0.1)
 =======
     "build:ignore": "cat ./.gitignore >> ./.npmignore",
 >>>>>>> 456a06e (modified:   README.md)
+=======
+    "preversion": "echo \"preversion-hook\"",
+    "version": "echo \"version-hook\"",
+    "postversion": "echo \"execute: git tag -a [version] -m [comment]\"",
+>>>>>>> c9a25c0 (added hooks: postversion)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
