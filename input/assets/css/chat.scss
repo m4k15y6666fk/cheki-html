@@ -75,10 +75,10 @@ body {
 
     /* 相手の会話 */
     .line__left {
-      width: 100%;
+      width: fit-content;
       position: relative;
       display: block;
-      margin-bottom: 5px;
+      margin: 10px 0;
       max-width: 80%;
       clear: both;
 
@@ -128,7 +128,7 @@ body {
           display: block;
           width: 100px;
           text-align: left;
-          right: -105px;
+          right: -110px;
           bottom: 0px;
           font-size: 80%;
           color: #ffffff;
